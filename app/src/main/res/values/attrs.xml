@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="myToolbar">
+        
+        <attr name="rightButtonIcon" format="reference"/>
+        <attr name="leftButtonIcon" format="reference"/>
+        <attr name="isShowHomeSearchView" format="boolean"/>
+        <attr name="isShowClassifySearchView" format="boolean"/>
+        <attr name="isShowTabLayout" format="boolean"/>
+        
+    </declare-styleable>
+
+    <declare-styleable name="ShadowLayout">
+        <attr format="color" name="shadowColor"/>
+        <attr format="dimension" name="shadowRadius"/>
+        <attr format="dimension" name="shadowDx"/>
+        <attr format="dimension" name="shadowDy"/>
+        <attr format="float" name="mShadowPaddingTop"/>
+        <attr format="float" name="mShadowPaddingBottom"/>
+        <attr format="float" name="mShadowPaddingLeft"/>
+        <attr format="float" name="mShadowPaddingRight"/>
+        <attr name="shadowSide">
+        <flag name="all" value="0x1111"/>
+        <flag name="left" value="0x0001"/>
+        <flag name="top" value="0x0010"/>
+        <flag name="right" value="0x0100"/>
+        <flag name="bottom" value="0x1000"/>
+    </attr></declare-styleable>
+
+</resources>

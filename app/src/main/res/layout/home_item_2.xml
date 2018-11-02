@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/foot"
+            android:layout_marginLeft="5dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/footprint"
+            android:tint="@color/coral"
+            android:textColor="@color/gray"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/start"
+            android:layout_toRightOf="@id/foot"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="赢在起点"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="more >"
+            android:textColor="@color/gray"
+            android:textStyle="normal"
+            android:textSize="14dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="horizontal">
+
+        <com.unique.widget.ShadowLayout
+            android:id="@+id/left_image_shadow"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:shadowColor="#ee48d1cc"
+            app:shadowDx="0dp"
+            app:shadowDy="0dp"
+            app:shadowRadius="6dp"
+            app:shadowSide="all"
+            app:mShadowPaddingRight="-2">
+
+            <LinearLayout
+                android:id="@+id/linear_left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/left_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/item2_1"
+                    android:background="@drawable/round_image"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+        </com.unique.widget.ShadowLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.unique.widget.ShadowLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                app:shadowColor="#ee48d1cc"
+                app:shadowDx="0dp"
+                app:shadowDy="0dp"
+                app:shadowRadius="6dp"
+                app:shadowSide="all"
+                app:mShadowPaddingLeft="-2"
+                app:mShadowPaddingBottom="-2">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/item2_2"
+                    android:background="@drawable/round_image"
+                    />
+
+            </com.unique.widget.ShadowLayout>
+
+            <com.unique.widget.ShadowLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                app:shadowColor="#ee48d1cc"
+                app:shadowDx="0dp"
+                app:shadowDy="0dp"
+                app:shadowRadius="6dp"
+                app:shadowSide="all"
+                app:mShadowPaddingLeft="-2"
+                app:mShadowPaddingTop="-2">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/item2_3"
+                    android:background="@drawable/round_image" />
+
+            </com.unique.widget.ShadowLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
